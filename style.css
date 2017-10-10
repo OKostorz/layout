@@ -35,12 +35,13 @@ body {
     
     padding: 0 25px 17px;;
 }
+
 #menu {
     display: inline-block;
     
     float: right;
     position: relative;
-    top: -50px;
+    top: -55px;
     right: 266px;
 }
 
@@ -48,16 +49,64 @@ body {
     text-decoration: none;
     color: black;
     
-    font-size: 13px;
     font-weight:600;
     text-transform: uppercase;
     
-    padding: 0 15px 3px;
+    padding: 8px 15px;
+    text-align: center;
 }
 
 #menu a:hover {
     border-bottom: 2px solid grey;
-    color: grey;
+    color: #2C5154;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    
+    border: none;
+    cursor: pointer;
+    
+    font-weight: 600;
+    
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.dropbtn a {
+    text-decoration: none;
+    
+}
+
+.dropdown {
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    
+    background-color: #e6e6ff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+    min-width: 100px;
+    top: 20px;
+}
+
+.dropdown-content a {
+    display: block;
+    
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #79B3B8;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 header {
@@ -125,13 +174,13 @@ main {
 .images-3 {
     background-image: url(img/got.jpg);
     background-size: cover;
-    margin-top: 20px;
+ 
 }
 
 .images-4 {
     background-image: url(img/mario.jpg);
     background-size: cover;
-    margin-top: 20px;
+
 }
 
 article {
@@ -147,6 +196,11 @@ article h2 {
 
 article p {
     padding: 0 0 40px;
+}
+
+article a {
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .boek, .museum, .serie, .SuperMario {
@@ -215,3 +269,8 @@ footer {
 	height: 100px;
 	background-color: #1D88A3;
 }
+
+/*.images-1{order: 3}
+.images-2{order: 2}
+.images-3{order: 1}
+.images-4{order: 4}*/
